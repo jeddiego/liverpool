@@ -1,0 +1,14 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.diegolara.liverpool.domain'
+    compileSdk 33
+}
+
+dependencies {
+    //Network
+    api "com.squareup.retrofit2:converter-gson:2.9.0"
+}

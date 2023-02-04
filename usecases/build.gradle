@@ -1,0 +1,19 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+}
+
+android {
+    namespace 'com.diegolara.liverpool.usecases'
+    compileSdk 32
+}
+
+dependencies {
+    implementation project(':data')
+    implementation project(':domain')
+
+    //Hilt
+    api "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+}
