@@ -36,6 +36,7 @@ class ProductsAdapter(
                 .load(item.image)
                 .into(ivItemProductsImage)
 
+            llItemProductsColors.removeAllViews()
             item.variantsColor.forEach {
                 val chip = LayoutInflater.from(tvItemProductsName.context)
                     .inflate(R.layout.item_products_colors, null, false) as TextView
